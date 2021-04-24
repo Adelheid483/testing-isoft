@@ -17,24 +17,28 @@ export default function App() {
     });
 
     return (
-        <form action="" className={styles.form} onSubmit={onSubmit}>
-            <section>
-                <label htmlFor="firstName">Имя</label>
-                <input
-                    type="text"
-                    id="firstName"
-                    {...register("firstName", {required: true})}
-                />
-            </section>
-            <section>
-                <label htmlFor="lastName">Фамилия</label>
-                <input
-                    type="text"
-                    id="lastName"
-                    {...register("lastName", {required: true})}
-                />
-            </section>
-            <Button />
-        </form>
+        <div className={styles.container}>
+            <div className={styles.content}>
+                <form action="" className={styles.form} onSubmit={onSubmit}>
+                    <section>
+                        <label htmlFor="firstName">Имя</label>
+                        <input
+                            type="text"
+                            id="firstName"
+                            {...register("firstName", {required: true})}
+                        />
+                    </section>
+                    <section>
+                        <label htmlFor="lastName">Фамилия</label>
+                        <input
+                            type="text"
+                            id="lastName"
+                            {...register("lastName", {required: true})}
+                        />
+                    </section>
+                    <Button />
+                </form>
+            </div>
+        </div>
     );
 };

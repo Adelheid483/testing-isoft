@@ -1,0 +1,10 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.input {
+  border-radius: 10px;
+  border: 1px solid $color-grey;
+  height: 30px;
+  width: 280px;
+  padding: 5px 15px;
+}

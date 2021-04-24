@@ -1,13 +1,18 @@
 import React from 'react';
 import styles from './Input.module.scss';
 
-const Input = () => {
+// @ts-ignore
+const Input = ({item}) => {
     return (
-        <input
-            type="text"
-            className={styles.input}
-            placeholder="Name"
-        />
+        <section>
+            <label htmlFor="input">{item}</label>
+            <input
+                type="text"
+                id="input"
+                name="input"
+                className={styles.input}
+            />
+        </section>
     );
 };
 

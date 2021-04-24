@@ -3,8 +3,8 @@ import styles from './Button.module.scss';
 
 const Button = () => {
     return (
-        <button className={styles.button}>
-            Done
+        <button type="submit" className={styles.button}>
+            Готово
         </button>
     );
 };
